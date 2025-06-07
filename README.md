@@ -44,3 +44,15 @@ A Python-based system for collecting and maintaining historical cryptocurrency p
    ```bash
    python src/daily_agg/data_collector.py
    ```
+
+## Data Storage
+
+- Each cryptocurrency's data is stored in a separate CSV file named `{symbol}_daily_agg_historical.csv`
+- Files include daily OHLCV (Open, High, Low, Close, Volume) data
+- Additional fields: VWAP (Volume Weighted Average Price) and Number of Transactions
+
+## Requirements
+
+- Python 3.6+
+- Polygon.io API key
+- Required Python packages are listed in `requirements.txt`
